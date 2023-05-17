@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div>
+    <p>Home works!</p>
+    {% for user in users %}
+        <div>
+            <p>{{ user.username }}</p>
+        </div>
+        <div>
+            <p>{{ user.site_url }}</p>
+        </div>
+    {% endfor %}
+</div>
+
+{% endblock %}	
